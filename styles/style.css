@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Change cursor */
+html {
+    cursor: url("/styles/cat-coursor1.png"), auto;
+}
+
+/* Background */
+body {
+    background-color: #5ff8ca;
+}
+  
+
+/* Cursor on buttons */
+button {
+    cursor: url(/styles/cat-coursor1.png), auto !important;
+}
+
+
+
+
+/* Main style */
+.animation {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+}
+
+.cat-container img {
+    width: 25rem;
+}
