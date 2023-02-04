@@ -6,8 +6,7 @@ let currentImageIndex = 7;
 cat.src = catImages[currentImageIndex];
 
 
-
-// Add meow sound effect 
+// Add meow sound effect and change frame
 const meowButton = document.getElementById("meow-button");
 const meowSound = document.getElementById("meow-sound"); 
 
@@ -17,8 +16,8 @@ meowButton.addEventListener("click", function() {
 });
 
 document.getElementById("meow-button").addEventListener("click", function () {
-    let currentImageIndex = 1;
-    cat.src = catImages[currentImageIndex];
+let currentImageIndex = 0;
+cat.src = catImages[currentImageIndex];
 
     setTimeout(function () {
         currentImageIndex = 7
@@ -26,15 +25,36 @@ document.getElementById("meow-button").addEventListener("click", function () {
     }, 1000);
 });
 
+
+
 // Add feed effect
+
+// Snacks Images array
+const snackImages = ["/cat/food1.png", "/cat/food2.png", "cat/food3.png"];
+
 document.getElementById("feed-button").addEventListener("click", function (){
-    
+    let currentImageIndex = 3;
+    cat.src = catImages[currentImageIndex];
+
+
+    setTimeout(function () {
+        currentImageIndex = 7;
+        cat.src = catImages[currentImageIndex];
+    }, 5000);
 })
+
+
+
+
 
 // Add tail effect
 document.getElementById("tail-button").addEventListener("click", function(){
 
 });
+
+
+
+
 
 // Add jump effect
 document.getElementById("jump-button").addEventListener("click", function (){
