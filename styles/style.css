@@ -6,7 +6,7 @@
 
 /* Change cursor */
 html {
-    cursor: url("/styles/cat-coursor1.png"), auto;
+    cursor: url("cat-coursor1.png"), auto;
 }
 
 /* Background */
