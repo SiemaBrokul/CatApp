@@ -1,5 +1,5 @@
 // Cat Images array
-const catImages = ["/cat/1.png", "/cat/2.png", "/cat/3.png", "/cat/4.png", "/cat5.png", "/cat/6.png", "/cat/7.png", "/cat/8.png"];
+const catImages = ["cat/1.png", "cat/2.png", "cat/3.png", "cat/4.png", "cat5.png", "cat/6.png", "cat/7.png", "cat/8.png"];
 const cat = document.getElementById("cat");
 let currentImageIndex = 7;
 
@@ -30,7 +30,7 @@ cat.src = catImages[currentImageIndex];
 // Add feed effect
 
 // Snacks Images array
-const snackImages = ["/cat/food1.png", "/cat/food2.png", "cat/food3.png"];
+const snackImages = ["cat/food1.png", "cat/food2.png", "cat/food3.png"];
 
 document.getElementById("feed-button").addEventListener("click", function (){
     let currentImageIndex = 3;
