@@ -32,6 +32,17 @@ button {
    flex-direction: column;
 }
 
+.cat-container{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cat-container img {
-    width: 25rem;
+    width: 10rem;
+}
+
+.btn-container {
+    margin-top: 25px;
 }
