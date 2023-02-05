@@ -5,14 +5,12 @@
 }
 
 /* Change cursor */
-html {
 
-    cursor: url("/styles/cat-coursor1.png"), auto;
-}
 
 /* Background */
 body {
     background-color: #5ff8ca;
+    cursor: url("/styles/cat-coursor1.png"), auto;
 }
   
 
