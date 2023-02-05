@@ -92,10 +92,38 @@ document.getElementById("feed-button").addEventListener("click", function (){
 
 
 
+
+
+
+
 // Add tail effect
 document.getElementById("tail-button").addEventListener("click", function(){
+    
+    const images = ["cat/8.png", "cat/8.1.png"];
+    let currentImageIndex = 0;
+    let interval = setInterval(function() {
+      document.getElementById("cat").src = images[currentImageIndex];
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+    }, 600);
+
+    setTimeout(function () {
+        clearInterval(interval);
+    }, 5000);
+    
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
