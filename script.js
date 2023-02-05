@@ -33,6 +33,10 @@ document.addEventListener("mousemove", function () {
                 cat.style.display = "none";
             }
         });
+        
+        document.querySelectorAll("button").forEach(function(button) {
+            button.setAttribute("disabled", "true");
+        });
     }, 5000);
     
 });
