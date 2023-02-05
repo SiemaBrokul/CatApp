@@ -6,35 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Animate Cat</title>
         <link rel="stylesheet" href="./styles/style.css">
-        <script src="./node_modules/animejs/lib/anime.min.js"></script>
-</head>
-<body>
-    <section class="animation">
-
-        <!-- Animated Cat -->
-        <div class="cat-container">
+    </head>
+    <body>
+        <section class="animation">
             
-            <img id="cat">
+            <!-- Animated Cat -->
+            <div class="cat-container">
+                
+                <img id="cat">
+                
+            </div>
             
-        </div>
+            <!-- Tasks Buttons -->
+            <div class="btn-container">
+                
+                <button id="meow-button">Miaucz</button>
+                <audio id="meow-sound">
+                    <source src="./styles/meow (1).mp3" type="audio/mpeg">
+                </audio>
+                <button id="feed-button">Nakarm</button>
+                <button id="tail-button">Machanie Ogonem</button>
+                <button id="jump-button">Skok</button>
+                
+            </div>
+        </section>
         
-        <!-- Tasks Buttons -->
-        <div class="btn-container">
-            
-            <button id="meow-button">Miaucz</button>
-            <audio id="meow-sound">
-                <source src="./styles/meow (1).mp3" type="audio/mpeg">
-            </audio>
-            <button id="feed-button">Nakarm</button>
-            <button id="tail-button">Machanie Ogonem</button>
-            <button id="jump-button">Skok</button>
-            
-        </div>
-    </section>
-    
-    
-
-    
-    <script src="./script.js"></script>
+        
+        
+        
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="./script.js"></script>
     </body>
     </html>
