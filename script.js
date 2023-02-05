@@ -31,20 +31,54 @@ cat.src = catImages[currentImageIndex];
 
 
 // Add feed effect
-
-// Snacks Images array
-const snackImages = ["cat/food1.png", "cat/food2.png", "cat/food3.png"];
-
 document.getElementById("feed-button").addEventListener("click", function (){
     let currentImageIndex = 3;
     cat.src = catImages[currentImageIndex];
-
-
     setTimeout(function () {
         currentImageIndex = 7;
         cat.src = catImages[currentImageIndex];
-    }, 5000);
+    }, 1000);
+    
 })
+    
+    const snackContainer = document.getElementById("snack-container");
+    const showSnacksButton = document.getElementById("feed-button");
+    const snacks = [
+        { name: "food1", src: "cat/food1.png" },
+        { name: "food2", src: "cat/food2.png" },
+        { name: "food3", src: "cat/food3.png" },
+    ];
+    
+    // Add snacks 
+    showSnacksButton.addEventListener("click", function() {
+        snacks.forEach((snack, index) => {
+            const snackElement = document.createElement("img");
+            snackElement.src = snack.src;
+            snackElement.alt = snack.name;
+            snackElement.style.opacity = 0;
+            snackElement.style.transition = `opacity 1s ease-out ${index * 1}s`;
+            snackContainer.appendChild(snackElement);
+        });
+        
+        anime({
+            targets: snackContainer.children,
+            translateY: [0, -1000],
+            opacity: [1, 0],
+            delay: anime.stagger(100),
+            easing: "easeOutExpo",
+            duration: 7000
+        });
+
+        setTimeout(() => {
+            while (snackContainer.firstChild) {
+              snackContainer.removeChild(snackContainer.firstChild);
+            }
+          }, 5000);
+    });
+    
+
+
+
 
 
 
@@ -73,6 +107,8 @@ document.getElementById("jump-button").addEventListener("click", function (){
     jumpAnimation.play();
     
 });
+
+
 
 
 
