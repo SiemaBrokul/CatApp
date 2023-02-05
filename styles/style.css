@@ -17,6 +17,9 @@ body {
 /* Cursor on buttons */
 button {
     cursor: url(/styles/cursor.png), auto !important;
+    font-size: 15px;
+    margin: 2px;
+    padding: 5px;
 }
 
 
@@ -57,6 +60,8 @@ button {
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
 }
   
 #snack-container img {

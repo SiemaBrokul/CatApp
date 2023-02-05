@@ -31,6 +31,14 @@ cat.src = catImages[currentImageIndex];
 
 
 // Add feed effect
+const feedButton = document.getElementById("feed-button");
+const feedSound = document.getElementById("feed-sound"); 
+
+feedButton.addEventListener("click", function() {
+    feedSound.currentTime = 0;
+    feedSound.play();
+});
+
 document.getElementById("feed-button").addEventListener("click", function (){
     let currentImageIndex = 3;
     cat.src = catImages[currentImageIndex];
