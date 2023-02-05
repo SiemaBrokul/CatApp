@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url("/styles/cat-coursor1.png"), auto;
 }
 
 /* Change cursor */
-html {
-    cursor: url("./styles/cat-coursor1.png"), auto;
-}
+
 
 /* Background */
 body {
