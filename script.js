@@ -9,6 +9,47 @@ let currentImageIndex = 7;
 cat.src = catImages[currentImageIndex];
 
 
+// Add sleep function 
+
+let timer;
+document.addEventListener("mousemove", function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+        const bed = document.getElementById("bed");
+        bed.style.display = "block";
+        anime({
+            targets: bed,
+            opacity: [0, 1],
+            duration: 500,
+            easing: "linear"
+        });
+
+        anime({
+            targets: cat,
+            opacity: [1, 0],
+            duration: 1000,
+            easing: "linear",
+            complete: function () {
+                cat.style.display = "none";
+            }
+        });
+    }, 5000);
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Add meow sound effect and change frame
 const meowButton = document.getElementById("meow-button");
 const meowSound = document.getElementById("meow-sound"); 
