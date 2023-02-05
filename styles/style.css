@@ -10,13 +10,13 @@
 /* Background */
 body {
     background-color: #5ff8ca;
-    cursor: url("/styles/cat-coursor1.png"), auto;
+    /* cursor: url("/styles/cat-coursor1.png"), auto; */
 }
   
 
 /* Cursor on buttons */
 button {
-    cursor: url(/styles/cat-coursor1.png), auto !important;
+    cursor: url(/styles/cursor.png), auto !important;
 }
 
 

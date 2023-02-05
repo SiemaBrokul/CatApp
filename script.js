@@ -1,3 +1,6 @@
+// Change cursor 
+document.body.style.cursor = "url(/styles/cursor.png), auto";
+
 // Cat Images array
 const catImages = ["cat/1.png", "cat/2.png", "cat/3.png", "cat/4.png", "cat5.png", "cat/6.png", "cat/7.png", "cat/8.png"];
 const cat = document.getElementById("cat");
