@@ -107,7 +107,7 @@ document.getElementById("jump-button").addEventListener("click", function (){
 
     const jumpAnimation = anime({
         targets: catImage,
-        translateY: [-100, 0],
+        translateY: [-300, 0],
         easing: "easeOutQuad",
         duration: 500,
         loop: false
